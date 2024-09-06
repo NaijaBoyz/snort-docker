@@ -18,12 +18,12 @@ This project helps you create a Docker container that runs [Snort 3](https://sno
 3. Run the following command to build the Docker image:
 
 
-   "docker build -t snort3:latest"
+   'docker build -t snort3:latest'
 
    Then run the container
 
 
-   "docker run --name snort3-container -it snort3:latest"
+   'docker run --name snort3-container -it snort3:latest'
 
    ### Contributing
 
