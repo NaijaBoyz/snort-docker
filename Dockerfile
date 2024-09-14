@@ -9,7 +9,7 @@ RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y build-essential libpcap-dev libpcre3-dev libnet1-dev zlib1g-dev luajit hwloc libdnet-dev \
     libdumbnet-dev bison flex liblzma-dev openssl libssl-dev pkg-config libhwloc-dev cmake cpputest libsqlite3-dev \
     uuid-dev libcmocka-dev libnetfilter-queue-dev libmnl-dev autotools-dev libluajit-5.1-dev libunwind-dev \
-    wget git libtool autoconf automake
+    wget git libtool autoconf automake net-tools iputils-ping nmap
 
 # Step 2: Create a directory for Snort source files
 WORKDIR /opt/snort-source-files
@@ -48,5 +48,3 @@ RUN cd /opt/snort-source-files && \
 
 # Set the default command to show the snort version
 CMD ["/bin/bash"]
-
-
